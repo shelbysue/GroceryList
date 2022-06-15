@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link src = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grocery List</h1>
+	<form action="add" method="get">
+		<label>Add Item: </label> 
+		<input type="text" name="item">
+		<input id="addNeed" type="submit" value="Need">
+		<input id="addHave" type="submit" value="Have">
+	</form>
+	<h2> Need: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item"> Milk <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Eggs <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Kitten Food <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item"> Bacon <a href="#">&#10006;</a></li>
+		</ul>	
+	<h2> Have: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item" checked> Steak <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Cream <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Cheese <a href="#">&#10006;</a></li>
+			<li><input type="checkbox" name="item" checked> Apples <a href="#">&#10006;</a></li>
+		</ul>
+    <script src = "grocery.js"></script>
+</body>
+</html>
